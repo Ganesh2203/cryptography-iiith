@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+    <title>Triple DES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="layout.css">
+</head>
+<body>
+    <div>
+        <h2>Triple DES</h2>
+    </div>
+    <br>
+    <hr>
+    <br>
+
+
+    <div style="width: 60%; margin-left: 20%">
+        <h3>Part 1</h3>
+        <br>
+        <table style="width: 100%">
+            <tr>
+                <td style="text-align: center;"> Message </td>
+                <td>
+                    <input style="width:90%" type="text" id="plain_text" name="Plain Text" readonly
+                        value=" 00000110 01100100 10110111 11110101 10001001 11100010 10010101 01101000"><br>
+                    <button onclick="">Change Plain Text</button>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"> Key Part A </td>
+                <td>
+                    <input type="text" id="key_A" name="Key A" readonly value="3b3898371520f75e">
+                    <button onclick="">Change Key A</button>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"> Key Part B </td>
+                <td>
+                    <input type="text" id="key_B" name="key B" readonly value="922fb510c71f436e">
+                    <button onclick="">Change Key B</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+
+
+    <div style="width: 60%; margin-left:20%; ">
+        <h3>Part 2</h3>
+        <br>
+        <table style="width: 100%">
+            <tr>
+                <td style="text-align: center;">
+                    Your text to be <br>encrypted/decrypted: </td>
+                <td>
+                    <input style="width:90%;" type="text" id="text" name="Plain Text"
+                        value=""><br>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"> Key to be used:</td>
+                <td>
+                    <input type="text" id="key" name="Key" value="">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button id="Encrypt" onclick="">DES Encrypt</button>
+                    <button id="Decrypt" onclick="">DES Decrypt</button>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"> Output:</td>
+                <td>
+                    <input type="text" id="output" name="Output B" value="">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <br>
+
+
+    <div style="width: 60%; margin-left:20%; ">
+        <h3>Part 3</h3>
+        <br>
+        <p>Enter Your Answers Here : </p>
+        <input type="text" id="answer" style="width:80%;" name="Answer" value=""><br><br>
+        <button id="check_answer" onclick="">Check Answer</button><br>
+        <input type="text" id="status" style="width:80%;" name="status" readonly value=""><br><br>
+    </div>
+
+    <br>
+    <br>
+
+</body>
+</html>
